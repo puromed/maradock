@@ -1,0 +1,311 @@
+/*general styles */
+body {
+    background-color: #ffffff; /* Light mode background */
+    color: #333; /* Default text color */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark Mode Styles */
+[data-bs-theme="dark"] body {
+    background-color: #423939; /* Dark mode background */
+    color: #fff; /* Default text color in dark mode */
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Shape Divider */
+.custom-shape-divider-bottom-1735808866 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1735808866 svg {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.custom-shape-divider-bottom-1735808866 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Video Cards Section */
+.video-section {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.video-card {
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Dark theme */
+[data-bs-theme="dark"] .hero-section {
+    --hero-gradient-start: #1a0046;
+    --hero-gradient-end: #2d0047;
+    --hero-text: #e1e1e1;
+    --decorative-gradient-1: rgba(29, 0, 71, 0.4);
+    --decorative-gradient-2: rgba(45, 0, 71, 0.4);
+}
+[data-bs-theme="dark"] .custom-shape-divider-bottom-1735808866 .shape-fill {
+    fill: #423939;
+}
+
+[data-bs-theme="dark"] .video-section {
+    background-color: #423939;
+}
+
+[data-bs-theme="dark"] .video-card {
+    background-color: #2d2727;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+[data-bs-theme="dark"] .video-card .card-title,
+[data-bs-theme="dark"] .video-card .card-text {
+    color: #fff;
+}
+
+.custom-shape-divider-bottom-1735825831 .shape-fill {
+    fill: #4a00e0;
+}
+
+[data-bs-theme="dark"] .custom-shape-divider-bottom-1735825831 .shape-fill {
+    fill:#4e048a;
+}
+
+/* Animation Classes */
+.opacity-0 {
+    opacity: 0;
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* FAQ Section */
+
+.custom-shape-divider-top-1735823673 .shape-fill {
+    padding-top: 0;
+    fill: #4a00e0;
+}
+
+[data-bs-theme="dark"] .custom-shape-divider-top-1735823673 .shape-fill {
+    fill: #4e048a;
+}
+
+.faq-section {
+    padding: 80px 0;
+    background-color: #fff; /* Light mode background */
+}
+
+.accordion-button {
+    background-color: #f8f9fa; /* Light mode button background */
+    color: #333; /* Light mode text color */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e2e6ea; /* Active button background */
+    color: #000; /* Active text color */
+}
+
+.accordion-body {
+    background-color: #fff; /* Light mode body background */
+    color: #333; /* Light mode text color */
+}
+
+/* Dark Mode Styles */
+[data-bs-theme="dark"] .faq-section {
+    background-color: #423939; /* Dark mode background */
+}
+
+[data-bs-theme="dark"] .accordion-button {
+    background-color: #423939; /* Dark mode button background */
+    color: #fff; /* Dark mode text color */
+}
+
+[data-bs-theme="dark"] .accordion-button:not(.collapsed) {
+    background-color: #5c4f4f; /* Active button background in dark mode */
+    color: #fff; /* Active text color in dark mode */
+}
+
+[data-bs-theme="dark"] .accordion-body {
+    background-color: #2d2727; /* Dark mode body background */
+    color: #fff; /* Dark mode text color */
+}
+
+
+
+/* Call to Action Section */
+.cta-section {
+    padding: 100px 0;
+    background: linear-gradient(to bottom, #4a00e0, #8e2de2);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark Mode Styles */
+[data-bs-theme="dark"] .cta-section {
+    background: linear-gradient(to bottom, #4e048a, #2d2727);
+}
+
+#cta-main {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    cursor: default;
+}
+
+.cta-card {
+    text-align: center;
+    padding: 4rem;
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cta-card h2 {
+    font-size: 3.5rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.cta-card p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #4a00e0, #8e2de2);
+    color: white;
+    text-decoration: none;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+/* Overlay Styling */
+.overlay {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    user-select: none;
+    opacity: var(--opacity, 0);
+    -webkit-mask: radial-gradient(
+        25rem 25rem at var(--x) var(--y),
+        #000 1%,
+        transparent 50%
+    );
+    mask: radial-gradient(
+        25rem 25rem at var(--x) var(--y),
+        #000 1%,
+        transparent 50%
+    );
+    transition: 1s mask ease;
+    will-change: mask;
+}
+
+.overlay .cta-card {
+    background: linear-gradient(
+        45deg,
+        #ff7e5f,
+        #feb47b,
+        #4a00e0,
+        #8e2de2
+    );
+    border-color: white;
+    transition: 0.8s mask ease-in-out;
+}
+
+/* Text Reveal Animation */
+.reveal-text {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.5s ease;
+}
+
+.reveal-text.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* CTA End */
+
+
+
+/* Footer Styles */
+footer {
+    padding: 1rem 0; /* Reduce vertical padding */
+}
+
+footer h5 {
+    font-size: 1.2rem; /* Smaller font size for headings */
+}
+
+footer p {
+    font-size: 0.9rem; /* Smaller font size for paragraphs */
+}
+
+/* Hide horizontal overflow */
+body {
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}

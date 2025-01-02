@@ -1,0 +1,451 @@
+/* contact_student.php */
+
+
+
+.wrapper {
+    min-height: calc(100vh - var(--navbar-height));
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--navbar-height);
+}
+
+#content {
+    flex: 1;
+    margin-left: var(--sidebar-width);
+    padding: 20px;
+    min-height: calc(100vh - var(--navbar-height) - var(--footer-height));
+    position: relative;
+    background: var(--bg-light);
+}
+
+[data-bs-theme="dark"] #content {
+    background: var(--bg-dark);
+}
+
+.contact-page-wrapper {
+    padding-top: var(--navbar-height);
+    margin-left: var(sidebar-width);
+    min-height: 100vh;
+    width: calc(100% - var(--sidebar-width));
+    background: var(background-color);
+}
+
+.contact-content {
+    padding: 20px;
+    width: 100px;
+}
+
+/* .student-contact-hero {
+    margin: -20px -20px 20px -20px;
+    position: relative;
+    background: url('../img/contact/support-hero-bg.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+} */
+
+.support-card {
+    background: var(--bg-light);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+[data-bs-theme="dark"] .support-card {
+    background: var(--bg-dark);
+}
+
+.support-form-container {
+    background: var(--bg-light);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 1200px;
+}
+
+[data-bs-theme="dark"] .support-form-container {
+    background: var(--bg-dark);
+}
+
+.support-history {
+    background: var(--bg-light);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-bs-theme="dark"] .support-history {
+    background: var(--bg-dark);
+}
+
+/* Text visibility fixes */
+.support-card h5,
+.support-card p,
+.contact-form-wrapper h3,
+.support-history h3,
+.table {
+    color: var(--text-color);
+}
+
+/* Dark mode text */
+[data-bs-theme="dark"] .support-card h5,
+[data-bs-theme="dark"] .support-card p,
+[data-bs-theme="dark"] .contact-form-wrapper h3,
+[data-bs-theme="dark"] .support-history h3,
+[data-bs-theme="dark"] .table {
+    color: var(--text-light);
+}
+
+/* Contact form */
+.contact-form-wrapper {
+    background: var(--bg-light);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+[data-bs-theme="dark"] .contact-form-wrapper {
+    background: var(--bg-dark);
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1040;
+    background-color: var(--navbar-bg);
+
+}
+
+[data-bs-theme="dark"] .navbar {
+    background-color: var(--navbar-bg-dark);
+}
+
+/* Sidebar styles */
+.wrapper {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 56px - 60px);
+    margin-top: 56px;
+    margin-bottom: 60px;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: var(--sidebar-bg, #f8f9fa);
+    color: var(--sidebar-text, #333);
+    transition: all 0.3s;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 56px;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    margin-left: 250px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* Sidebar Content Styles */
+#sidebar .sidebar-header {
+    padding: 20px;
+}
+
+#sidebar .sidebar-header h5 {
+    color: var(--sidebar-text, #333);
+    margin: 0;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47597E;
+}
+
+#sidebar ul li a {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: var(--sidebar-text, #333);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a.active {
+    background: var(--sidebar-hover, #e9ecef);
+    border-left-color: #0d6efd;
+    color: #0d6efd;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/* Hide sidebar on mobile */
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+    
+    #content {
+        margin-left: 0;
+    }
+    
+    .navbar {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Mobile Sidebar (Offcanvas) */
+#sidebar-mobile {
+    width: 250px;
+}
+
+#sidebar-mobile .nav-link {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    transition: all 0.3s;
+}
+
+#sidebar-mobile .nav-link:hover {
+    background: #f8f9fa;
+}
+
+#sidebar-mobile .nav-link i {
+    margin-right: 10px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+/* sidebar end */
+
+
+
+
+
+/* .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(74, 0, 224, 0.9), rgba(142, 45, 226, 0.8));
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 4rem 0;
+} */
+
+.support-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.stat-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 15px;
+    min-width: 150px;
+    max-width: 200px;
+    flex: 1;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.stat-label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+}
+
+/*footer adjustments*/
+footer {
+    position: relative;
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+}
+
+/* Dark mode adjustments */
+[data-bs-theme="dark"] .student-contact-hero {
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Adjust when sidebar is collapsed */
+.sidebar-collapsed #content {
+    margin-left: 0;
+}
+
+/* Support history table enhancements */
+.support-history .table {
+    margin-bottom: 0;
+}
+
+.support-history .table th {
+    border-top: none;
+    font-weight: 600;
+}
+
+/* Status colors */
+.support-history .text-primary { color: #0d6efd !important; }
+.support-history .text-warning { color: #ffc107 !important; }
+.support-history .text-success { color: #198754 !important; }
+.support-history .text-secondary { color: #6c757d !important; }
+
+/* Dark mode specific styles */
+[data-bs-theme="dark"] .support-history {
+    background: var(--bg-dark);
+}
+
+[data-bs-theme="dark"] .support-history .table {
+    color: var(--bs-light);
+}
+
+[data-bs-theme="dark"] .support-history .table td,
+[data-bs-theme="dark"] .support-history .table th {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Hover effect on table rows */
+.support-history .table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.support-history .table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+[data-bs-theme="dark"] .support-history .table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #content,
+    .footer {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .student-contact-hero {
+       margin: -20px -20px 20px -20px;
+       margin-top: 76px;
+    }
+
+    .support-form-container,
+    .support-history {
+        margin: 1rem;
+    }
+
+    .support-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .stat-item {
+        width: 100%;
+        max-width: 250px;
+        min-width: auto;
+        padding: 1.5rem;
+    }
+    
+    .hero-content {
+        padding: 2rem 1rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content .lead {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero-overlay {
+        padding: 2rem 0;
+    }
+
+    /* Adjust when sidebar is open on mobile */
+    .sidebar-open #content {
+        transform: translateX(250px);
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .student-contact-hero {
+        min-height: 100vh;
+    }
+
+    .stat-item {
+        max-width: 200px;
+        padding: 1.25rem;
+    }
+
+    .stat-value {
+        font-size: 2rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Fix z-index stacking */
+.offcanvas {
+    z-index: 1050;
+}
+
+/* Footer styles */
+footer {
+    position: relative;
+    width: 100%;
+    background: #2B2D42;
+    color: #fff;
+    padding: 20px 0;
+    z-index: 1000;
+    margin-left: 0;
+}
+
+/* contact_student.php end */

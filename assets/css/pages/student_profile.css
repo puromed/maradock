@@ -1,0 +1,347 @@
+:root {
+    /* Light theme colors */
+    --light-gradient-start: #ffffff;
+    --light-gradient-end: #f8f9fa;
+    --light-text: #333;
+    --light-text-muted: #666;
+    --light-border: rgba(0,0,0,0.1);
+    --light-card-bg: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    
+    /* Dark theme colors */
+    --dark-gradient-start: #2c3e50;
+    --dark-gradient-end: #1a252f;
+    --dark-text: #e0e0e0;
+    --dark-text-muted: #a0a0a0;
+    --dark-border: rgba(255,255,255,0.1);
+    --dark-card-bg: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+}
+
+.navbar {
+    background-color: #2B2D42; /* Dark background color */
+    color: #fff;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #adb5bd;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #fff;
+}
+
+.fa-bell {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.fa-bell:hover {
+    color: #ffd700;
+}
+
+.dropdown-menu {
+    min-width: 280px;
+}
+
+.dropdown-header {
+    font-weight: bold;
+    color: #333;
+}
+
+.badge {
+    font-size: 0.7rem;
+    padding: 0.35em 0.65em;
+}
+
+
+
+.dropdown-menu {
+    min-width: 200px;
+}
+
+.dropdown-item i {
+    width: 20px;
+}
+
+/* navbar end */
+
+/* Sidebar styles */
+.wrapper {
+    display: flex;
+    width: 100%;
+    min-height: calc(100vh - 56px - 60px);
+    margin-top: 56px;
+    margin-bottom: 60px;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: var(--sidebar-bg, #f8f9fa);
+    color: var(--sidebar-text, #333);
+    transition: all 0.3s;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 56px;
+}
+
+#content {
+    width: 100%;
+    padding: 20px;
+    margin-left: 250px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+/* Sidebar Content Styles */
+#sidebar .sidebar-header {
+    padding: 20px;
+}
+
+#sidebar .sidebar-header h5 {
+    color: var(--sidebar-text, #333);
+    margin: 0;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47597E;
+}
+
+#sidebar ul li a {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    display: block;
+    color: var(--sidebar-text, #333);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+#sidebar ul li a:hover,
+#sidebar ul li a.active {
+    background: var(--sidebar-hover, #e9ecef);
+    border-left-color: #0d6efd;
+    color: #0d6efd;
+}
+
+#sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/* Hide sidebar on mobile */
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+    
+    #content {
+        margin-left: 0;
+    }
+    
+    .navbar {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Mobile Sidebar (Offcanvas) */
+#sidebar-mobile {
+    width: 250px;
+}
+
+#sidebar-mobile .nav-link {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    transition: all 0.3s;
+}
+
+#sidebar-mobile .nav-link:hover {
+    background: #f8f9fa;
+}
+
+#sidebar-mobile .nav-link i {
+    margin-right: 10px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+/* sidebar end */
+
+/* Profile Container Styles */
+.profile-container {
+    background: var(--light-card-bg);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+/* Profile Picture Styles */
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+    transform: scale(1.05);
+}
+
+/* Information Card Styles */
+.info-card {
+    background: var(--light-card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    border: 1px solid var(--light-border);
+}
+
+.info-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.info-card h5 {
+    color: var(--light-text);
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.info-card h5 i {
+    margin-right: 10px;
+    color: #4a90e2;
+    font-size: 1.2em;
+}
+
+.info-card hr {
+    background: var(--light-border);
+    opacity: 0.5;
+    margin: 15px 0;
+}
+
+/* Student Info Styles */
+.student-info p {
+    margin-bottom: 12px;
+    color: var(--light-text-muted);
+    transition: color 0.3s ease;
+}
+
+.student-info strong {
+    color: var(--light-text);
+    min-width: 120px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+
+[data-bs-theme="dark"] .profile-container {
+    background: var(--dark-card-bg);
+}
+
+[data-bs-theme="dark"] .info-card {
+    background: var(--dark-card-bg);
+    border-color: var(--dark-border);
+}
+
+[data-bs-theme="dark"] .info-card h5 {
+    color: var(--dark-text);
+}
+
+[data-bs-theme="dark"] .student-info p {
+    color: var(--dark-text-muted);
+}
+
+[data-bs-theme="dark"] .student-info strong {
+    color: var(--dark-text);
+}
+
+[data-bs-theme="dark"] .profile-picture {
+    border-color: var(--dark-border);
+}
+
+[data-bs-theme="dark"] .btn-primary {
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 15px;
+    }
+    
+    .info-card {
+        padding: 15px;
+    }
+    
+    .student-info strong {
+        min-width: 100px;
+    }
+    
+    .profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Animation for theme transition */
+.profile-container,
+.info-card,
+.student-info p,
+.student-info strong,
+.info-card h5 {
+    transition: all 0.3s ease;
+}
+
+/* Hover effects for interactive elements */
+.btn-primary {
+    background: linear-gradient(135deg, #4a90e2 0%, #357abd 100%);
+    border: none;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Custom scrollbar */
+.profile-info::-webkit-scrollbar {
+    width: 8px;
+}
+
+.profile-info::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.profile-info::-webkit-scrollbar-thumb {
+    background: #4a90e2;
+    border-radius: 4px;
+}
+
+/* Dark mode scrollbar */
+[data-bs-theme="dark"] .profile-info::-webkit-scrollbar-thumb {
+    background: #357abd;
+}
+

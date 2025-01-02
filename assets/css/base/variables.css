@@ -1,0 +1,52 @@
+:root {
+    /* Colors */
+    --primary-color: #4a00e0;
+    --secondary-color: #8e2de2;
+    /* --text-color: #333; */
+    --text-light: #fff;
+    --bg-light: #f8f9fa;
+    --bg-dark: #212529;
+    
+    /* Hero Section */
+    --hero-gradient-start: #4a00e0;
+    --hero-gradient-end: #8e2de2;
+    --hero-text: #ffffff;
+    --decorative-gradient-1: rgba(74, 0, 224, 0.2);
+    --decorative-gradient-2: rgba(142, 45, 226, 0.2);
+
+    /* Category Cards */
+    --category-card-bg: #ffffff;
+    --category-card-text: #333333;
+    --category-card-shadow: rgba(0, 0, 0, 0.1);
+    
+    /* Spacing */
+    --navbar-height: 56px;
+    --sidebar-width: 250px;
+    
+    /* Transitions */
+    --transition-speed: 0.3s;
+    
+    /* Shadows */
+    --box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+    /* Dark mode variables */
+    --sidebar-bg: var(--bg-light);
+    --sidebar-text: var(--text-color);
+
+     /* Navbar */
+     --navbar-bg: var(--primary-color);
+     --navbar-bg-dark: var(--bg-dark);
+}
+
+[data-bs-theme="dark"] {
+    --sidebar-bg: var(--bg-dark);
+    --sidebar-text: var(--text-light);
+    --hero-gradient-start: #1a0046;
+    --hero-gradient-end: #2d0047;
+    --hero-text: #e1e1e1;
+    --decorative-gradient-1: rgba(29, 0, 71, 0.4);
+    --decorative-gradient-2: rgba(45, 0, 71, 0.4);
+    --category-card-bg: #2d2d2d;
+    --category-card-text: #ffffff;
+    --category-card-shadow: rgba(0, 0, 0, 0.3);
+}
