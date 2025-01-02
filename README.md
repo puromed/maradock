@@ -96,10 +96,10 @@ The web application is heavily reliant on the database, therefore, if any error 
     * Navigate to `config/db_connection.php`.
     * Update the database credentials:
       ```php
-         define('DB_HOST', 'localhost');
-         define('DB_USER', 'your_username');
-         define('DB_PASS', 'your_password');
-         define('DB_NAME', 'maradock');
+        $servername = "localhost"; 
+        $username = "your username";
+        $password = "your password";
+        $dbname = "unitest";
       ```
 
 ## License
