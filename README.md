@@ -116,3 +116,4 @@ Project Link: [https://github.com/puromed/maradock](https://github.com/puromed/m
 
 *   [Bootstrap](https://getbootstrap.com)
 *   [Font Awesome](https://fontawesome.com)
+*   [ApexChartJS](https://apexcharts.com/)
