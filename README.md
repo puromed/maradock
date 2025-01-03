@@ -112,7 +112,7 @@ Arfan Haziq - arfanhaziq33@gmail.com
 
 Project Link: [https://github.com/puromed/maradock](https://github.com/puromed/maradock)
 
-## Acknowledgments
+## Acknowledgements
 
 *   [Bootstrap](https://getbootstrap.com)
 *   [Font Awesome](https://fontawesome.com)
